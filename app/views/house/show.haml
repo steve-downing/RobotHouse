@@ -1,4 +1,5 @@
 .house-name= @house.name
 .room-list
 	- @house.rooms.each do |room|
-		.room-name= room.name
+		%a{ :href => "/room/#{room.id}"}
+			.room-name= room.name

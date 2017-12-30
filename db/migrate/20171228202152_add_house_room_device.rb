@@ -14,7 +14,7 @@ class AddHouseRoomDevice < ActiveRecord::Migration[5.1]
   	end
 
   	create_table :devices do |t|
-  		t.string :name, :type, :external_id, :coordinates
+  		t.string :name, :device_type, :external_id, :coordinates
   		t.belongs_to :room
 
   		t.timestamps

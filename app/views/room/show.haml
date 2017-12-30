@@ -1,0 +1,5 @@
+.room-name= @room.name
+.device-list
+	- @room.devices.each do |device|
+		%a{ :href => "/device/#{device.id}"}
+			.device-name= device.name

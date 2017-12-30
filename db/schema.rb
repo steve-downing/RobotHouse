@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 20171228202152) do
 
   create_table "devices", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "device_type"
     t.string "external_id"
     t.string "coordinates"
     t.integer "room_id"
