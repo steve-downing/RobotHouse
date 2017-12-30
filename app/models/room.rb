@@ -1,6 +1,4 @@
 class Room < ApplicationRecord
 	belongs_to :house
 	has_many :devices
-
-	attr_accessor :name
 end
